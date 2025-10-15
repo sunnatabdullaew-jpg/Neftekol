@@ -102,12 +102,16 @@
                 transition: all 0.5s linear;
             }
             &:hover{
-                background: #ffd000;
+                background: #000000;
+                    transform: scale(1.1);
+
                 border: none;
                 transition: all 0.7s linear;
             }
             &:hover .azs_box_btn_text{
                 color: aliceblue;
+                    transform: scale(1.1);
+
                 transition: all 0.7s linear;
             }
         }

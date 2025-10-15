@@ -85,11 +85,15 @@
                 transition: all 0.5s linear;
                 }
                 &:hover{
-                    background-color: #DBA833;
+                    transform: scale(1.1);
+                    
+                    background-color: #000000;
                     border: none;
                     transition: all 0.5s linear;
                 }
                 &:hover .market_box_contener_btn_text{
+                    transform: scale(1.1);
+                    
                     color: aliceblue;
                     transition: all 0.5s linear;
                 }
@@ -117,11 +121,15 @@
             transition: all 0.5s linear;
         }
         &:hover{
-            background-color: #DBA833;
+                    transform: scale(1.1);
+            
+            background-color: #000000;
             border: none;
             transition: all 0.5s linear;
         }
         &:hover .market_btn_text{
+                    transform: scale(1.1);
+            
             color: aliceblue;
             transition: all 0.5s linear;
         }
@@ -220,11 +228,15 @@
                     transition: all 0.5s linear;
                     }
                     &:hover{
+                    transform: scale(1.1);
+                        
                         background-color: #DBA833;
                         border: none;
                         transition: all 0.5s linear;
                     }
                     &:hover .market_box_contener_btn_text{
+                    transform: scale(1.1);
+                        
                         color: aliceblue;
                         transition: all 0.5s linear;
                     }
@@ -252,11 +264,15 @@
                 transition: all 0.5s linear;
             }
             &:hover{
+                    transform: scale(1.1);
+                
                 background-color: #DBA833;
                 border: none;
                 transition: all 0.5s linear;
             }
             &:hover .market_btn_text{
+                    transform: scale(1.1);
+                
                 color: aliceblue;
                 transition: all 0.5s linear;
             }

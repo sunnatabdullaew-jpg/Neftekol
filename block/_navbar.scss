@@ -1,334 +1,348 @@
-.navbar{
-    width: 100%;
-    height: 1142px;
-    @include display();
-    flex-direction: column;
-    background-image: url(../img/intro-bg-img.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    -webkit-box-shadow: 0px 97px 61px -15px rgba(0, 0, 0, 0.95) inset;
-    -moz-box-shadow: 0px 97px 61px -15px rgba(0, 0, 0, 0.95) inset;
-    box-shadow: 0px 97px 61px -15px rgba(0, 0, 0, 0.95) inset;
-    padding: 20px 0px;
-    .header{
-        width: 1200px;
-        height: 80px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 3;
-        &_img{
-            width: 100px;
-            height: 80px;
-        }
-        &_title{
-            width: 1066px;
-            height: 80px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-direction: column;
-            &_stick{
-                width: 100%;
-                height: 0px;
-                border: 1px dashed #979797;
-            }
-            &_list{
-                width: 100%;
-                height: 25px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                &_text{
-                font-family: 'Inter';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 15px;
-                line-height: 18px;
-                color: #FFFFFF;
-                text-align: center;
-                display: flex;
-                align-items: center;
-                transition: all 0.3s linear;
-                &:hover{
-                    color: #FFC700;
-                    transition: all 0.5s linear;
-                }
-                }
-                &_get-out{
-                    width: 21px;
-                    height: 21px;
-                    fill: #FFFFFF;
-                    transition: all 0.3s linear;
-                    &:hover{
-                        fill: #FFC700;
-                        transition: all 0.5s linear;
-                    }
-                }
-            }
-            &_info{
-                width: 100%;
-                height: 25px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                &_working-time{
-                    width: 169px;
-                    height: 22px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    &_icon{
-                        width: 19px;
-                        height: 19px;
-                        fill: #e2e2e29a;
-                        &:hover{
-                            fill: #fdde6e;
-                            transition: all 0.4s linear;
-                        }
-                    }
-                    &_text{
-                        font-family: 'Inter';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 15px;
-                        line-height: 18px;
-                        color: #e2e2e29a;
-                        text-align: center;
-                        &:hover{
-                            color: #b3fc9db9;
-                            transition: all 0.7s linear;
-                        }
-                    }
-                }
-                &_email{
-                    width: 149px;
-                    height: 22px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    &_icon{
-                        width: 19px;
-                        height: 19px;
-                        fill: #e2e2e29a;
-                        &:hover{
-                            fill: #fdde6e;
-                            transition: all 0.4s linear;
-                        }
-                    }
-                    &_text{
-                        font-family: 'Inter';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 15px;
-                        line-height: 18px;
-                        color: #e2e2e29a;
-                        text-align: center;
-                        &:hover{
-                            color: #b3fc9db9;
-                            transition: all 0.7s linear;
-                        }
-                    }
-                }
-                &_phone{
-                    width: 149px;
-                    height: 22px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    &_icon{
-                        width: 19px;
-                        height: 19px;
-                        fill: #e2e2e29a;
-                        &:hover{
-                            fill: #fdde6e;
-                            transition: all 0.4s linear;
-                        }
-                    }
-                    &_text{
-                        font-family: 'Inter';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 15px;
-                        line-height: 18px;
-                        color: #e2e2e29a;
-                        text-align: center;
-                        &:hover{
-                            color: #b3fc9db9;
-                            transition: all 0.7s linear;
-                        }
-                    }
-                }
-            }
-            &_burger{
-                width: 50px;
-                height: 25px;
-                display: none;
-                flex-direction: column;
-                align-items: start;
-                justify-content: space-between;
-                &:hover .header_title_burger_line{
-                    background-color: #fdde6e;
-                    transition: all 0.4s linear;
-                }
-                & .header_title_burger_line{
-                    transition: all 0.6s linear;
-                }
-                &_line{
-                    width: 40px;
-                    height: 5px;
-                    background-color: #000000;
-                    border-radius: 3px;
-                }
-            }
-        }
+.navbar {
+  width: 100%;
+  height: 1142px;
+  @include display();
+  flex-direction: column;
+  background-image: url(../img/intro-bg-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-box-shadow: 0px 97px 61px -15px rgba(0, 0, 0, 0.95) inset;
+  -moz-box-shadow: 0px 97px 61px -15px rgba(0, 0, 0, 0.95) inset;
+  box-shadow: 0px 97px 61px -15px rgba(0, 0, 0, 0.95) inset;
+  padding: 20px 0px;
+  .header {
+    width: 1200px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+    &_img {
+      width: 100px;
+      height: 80px;
     }
-    .intro{
-            width: 1114px;
-            height: 423px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-evenly;
-            position: relative;
-            &_text{
-            width: 1006px;
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 64px;
-            line-height: 77px;
-            text-align: center;
-            color: #DBA833;
-            text-align: center;
-            z-index: 2;
-            & span{
-                color: #FFFFFF;
-            }
-            }
-            &_subtext{
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 29px;
-            text-align: center;
-            color: #CECECE;
-            z-index: 2;
-            }
-            &_div{
-                width: 288px;
-                height: 54px;
-                background-color: #FFC700;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 7px;
-                z-index: 2;
-                transition: all 0.4s linear;
-                &_text{
-                font-family: 'Inter';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 20px;
-                line-height: 24px;
-                text-align: center;
-                color: #FFFFFF;
-                transition: all 0.4s linear;
-                }
-                &:hover{
-                    background: #00000000;
-                    border: 1px solid #FFC700;
-                    transition: all 1s linear;
-                }
-                &:hover .intro_div_text{
-                    color: #FFC700;
-                    transition: all 1s linear;
-                }
-            }
-            &_img{
-                position: absolute;
-                z-index: 0;
-            }
-            &_bg{
-                width: 100%;
-                position: absolute;
-                z-index: 1;
-            }
-    }
-    .stick{
+    &_title {
+      width: 1066px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      &_stick {
         width: 100%;
         height: 0px;
         border: 1px dashed #979797;
+      }
+      &_list {
+        width: 100%;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &_text {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 15px;
+          line-height: 18px;
+          color: #ffffff;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          transition: all 0.3s linear;
+          &:hover {
+            color: #ffc700;
+            transition: all 0.5s linear;
+            transform: scale(1.1);
+          }
+        }
+        &_get-out {
+          width: 21px;
+          height: 21px;
+          fill: #ffffff;
+          transition: all 0.3s linear;
+          &:hover {
+            fill: #ffc700;
+            transition: all 0.5s linear;
+          }
+        }
+      }
+      &_info {
+        width: 100%;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &_working-time {
+          width: 169px;
+          height: 22px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          &_icon {
+            width: 19px;
+            height: 19px;
+            fill: #e2e2e29a;
+            &:hover {
+              fill: #fdde6e;
+              transition: all 0.4s linear;
+              transform: scale(1.1);
+            }
+          }
+          &_text {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: #e2e2e29a;
+            text-align: center;
+            &:hover {
+              color: #b3fc9db9;
+              transition: all 0.7s linear;
+                    transform: scale(1.1);
+            }
+          }
+        }
+        &_email {
+          width: 149px;
+          height: 22px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          &_icon {
+            width: 19px;
+            height: 19px;
+            fill: #e2e2e29a;
+            &:hover {
+              fill: #fdde6e;
+              transition: all 0.4s linear;
+                    transform: scale(1.1);
+
+            }
+          }
+          &_text {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: #e2e2e29a;
+            text-align: center;
+            &:hover {
+              color: #b3fc9db9;
+              transition: all 0.7s linear;
+                    transform: scale(1.1);
+
+            }
+          }
+        }
+        &_phone {
+          width: 149px;
+          height: 22px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          &_icon {
+            width: 19px;
+            height: 19px;
+            fill: #e2e2e29a;
+            &:hover {
+              fill: #fdde6e;
+              transition: all 0.4s linear;
+                    transform: scale(1.1);
+
+            }
+          }
+          &_text {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: #e2e2e29a;
+            text-align: center;
+            &:hover {
+              color: #b3fc9db9;
+              transition: all 0.7s linear;
+            }
+          }
+        }
+      }
+      &_burger {
+        width: 50px;
+        height: 25px;
+        display: none;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        &:hover .header_title_burger_line {
+          background-color: #000000;
+          transition: all 0.4s linear;
+                    transform: scale(1.1);
+
+        }
+        & .header_title_burger_line {
+          transition: all 0.6s linear;
+        }
+        &_line {
+          width: 40px;
+          height: 5px;
+          background-color: #000000;
+          border-radius: 3px;
+        }
+      }
     }
-    &_text{
-        font-family: 'Inter';
+  }
+  .intro {
+    width: 1114px;
+    height: 423px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    &_text {
+      width: 1006px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 77px;
+      text-align: center;
+      color: #dba833;
+      text-align: center;
+      z-index: 2;
+      & span {
+        color: #ffffff;
+      }
+    }
+    &_subtext {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      color: #cecece;
+      z-index: 2;
+    }
+    &_div {
+      width: 288px;
+      height: 54px;
+      background-color: #ffc700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 7px;
+      z-index: 2;
+      transition: all 0.4s linear;
+      &_text {
+        font-family: "Inter";
         font-style: normal;
         font-weight: 700;
-        font-size: 48px;
-        line-height: 58px;
+        font-size: 20px;
+        line-height: 24px;
         text-align: center;
-        color: #FFFFFF;
+        color: #ffffff;
+        transition: all 0.4s linear;
+      }
+      &:hover {
+                    transform: scale(1.1);
+
+        border: 1px solid #ffc700;
+        transition: all 1s linear;
+      }
+      &:hover .intro_div_text {
+        color: #000000;
+                    transform: scale(1.1);
+
+        transition: all 1s linear;
+      }
     }
+    &_img {
+      position: absolute;
+      z-index: 0;
+    }
+    &_bg {
+      width: 100%;
+      position: absolute;
+      z-index: 1;
+    }
+  }
+  .stick {
+    width: 100%;
+    height: 0px;
+    border: 1px dashed #979797;
+  }
+  &_text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    color: #ffffff;
+  }
 }
 
 @media (max-width: 500px) {
-    .navbar{
-        background-position-x: center, right;
-        width: 100%;
-        height: 681px;
-        .header{
-            width: 90%;
-            &_title{
-                width: 70%;
-                flex-direction: row;
-                &_list{
-                    display: none;
-                }
-                &_info{
-                    width: 166px;
-                    height: 80px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: start;
-                }
-                &_burger{
-                    display: flex;
-                }
-                &_stick{
-                    display: none;
-                }
-            }
+  .navbar {
+    background-position-x: center, right;
+    width: 100%;
+    height: 681px;
+    .header {
+      width: 90%;
+      &_title {
+        width: 70%;
+        flex-direction: row;
+        &_list {
+          display: none;
         }
-        .intro{
-            width: 90%;
-            height: 385px;
-            &_text{
-            width: 100%;
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 36px;
-            line-height: 44px;
-            text-align: center;
-            color: #DBA833;
-            }
-            &_subtext{
-                font-size: 20px;
-                line-height: 24px;
-            }
-            &_img{
-                display: none;
-            }
-            &_div{
-                width: 230px;
-                height: 50px;
-                &_text{
-                    font-size: 20px;
-                    line-height: 24px;
-                }
-            }
+        &_info {
+          width: 166px;
+          height: 80px;
+          display: flex;
+          flex-direction: column;
+          align-items: start;
         }
+        &_burger {
+          display: flex;
+        }
+        &_stick {
+          display: none;
+        }
+      }
     }
+    .intro {
+      width: 90%;
+      height: 385px;
+      &_text {
+        width: 100%;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        color: #dba833;
+      }
+      &_subtext {
+        font-size: 20px;
+        line-height: 24px;
+      }
+      &_img {
+        display: none;
+      }
+      &_div {
+        width: 230px;
+        height: 50px;
+        &_text {
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
 }

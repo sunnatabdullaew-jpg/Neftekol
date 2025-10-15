@@ -65,11 +65,14 @@
                         transition: all 0.5s linear;
                     }
                 &:hover{
-                background: inherit;
+                    transform: scale(1.1);
+                    
                 border: 2px solid #ff9900;
                 transition: all 0.7s linear;
                 }
                 &:hover .left_box_info_div_text{
+                    transform: scale(1.1);
+                    
                     color: #ff9900;
                     transition: all 0.7s linear;
                 }
@@ -139,11 +142,14 @@
                         transition: all 0.5s linear;
                     }
                 &:hover{
-                background: inherit;
+                    transform: scale(1.1);
+                    
                 border: 2px solid #ff9900;
                 transition: all 0.7s linear;
                 }
                 &:hover .right_box_info_div_text{
+                    transform: scale(1.1);
+                    
                     color: #ff9900;
                     transition: all 0.7s linear;
                 }
