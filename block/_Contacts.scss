@@ -1,0 +1,146 @@
+.contacts_wrapper{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/contacts-bg-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 70px;
+    z-index: 3;
+}
+
+.contacts{
+    width: 1200px;
+    height: 166px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    position: relative;
+    z-index: 3;
+    &_text{
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 57px;
+        color: #ffffff;
+        & span{
+            color: rgb(255, 166, 0);
+        }
+    }
+    &_box{
+        width: 100%;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 3;
+        &_input{
+        width: 400px;
+        height: 44px;
+        background: rgba(30, 30, 30, 0.7);
+        border: none;
+        backdrop-filter: blur(2px);
+        border-radius: 5px;
+        z-index: 3;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+        padding: 0px 10px;
+        z-index: 3;
+        &:focus{
+            outline: none;
+        }
+        }
+        &_btn{
+        width: 370px;
+        height: 44px;
+        background: #FFFFFF;
+        border: 2px solid #DBA833;
+        backdrop-filter: blur(2px);
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 3;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #DBA833;
+        z-index: 3;
+        }
+    }
+    &_end{
+        width: 1200px;
+        height: 19px;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        &_text{
+        width: 359px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        }
+    }
+    &_shadow{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 500px){
+    .contacts{
+        width: 90%;
+        height: 303px;
+        &_text{
+        width: 80%;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 32px;
+        color: #FFFFFF;
+        text-align: center;
+        }
+        &_box{
+            & form{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                height: 100%;
+            }
+            width: 90%;
+            height: 160px;
+            align-items: center;
+            flex-direction: column;
+            &_input{
+                width: 300px;
+            }
+            &_btn{
+                width: 300px;
+            }
+        }
+        &_end{
+            width: 90%;
+            &_text{
+                width: 90%;
+            }
+        }
+    }
+}
