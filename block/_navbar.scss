@@ -288,6 +288,9 @@
 }
 
 @media (max-width: 500px) {
+  .navbar_title_burger:hover .mobile_bar{
+    display: flex;
+  }
   .navbar {
     background-position-x: center, right;
     width: 100%;
