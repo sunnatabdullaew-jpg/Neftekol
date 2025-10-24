@@ -1,0 +1,79 @@
+.input{
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
+    &_wrapper{
+        border: 1px dashed #f3a805;
+        border-radius: 20px;
+        padding: 20px;
+        width: 700px;
+        margin: 50px auto;
+    }
+    &_wrapper_title{
+       font-family: 'Rubik';
+        color: rgb(187, 156, 19);
+    }
+    &_wrapper_form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &_card{
+            display: flex;
+            gap: 10px;
+        }
+
+        &_input{
+            width: 300px;
+            border-radius: 10px;
+            height: 34px;
+            border: 1px solid #868686;
+            padding: 5px;
+            color: #868686;
+        }
+        &_btn{
+            width: 300px;
+            border-radius: 10px;
+            height: 34px;
+            border: 1px solid #949494;
+            padding: 5px;
+            color: #868686;
+        }
+         &_btn_2{
+            width: 610px;
+            border-radius: 10px;
+            height: 34px;
+            border: 1px solid #949494;
+            padding: 5px;
+            color: #868686;
+        }
+        &_btn_3{
+            border: 1px solid #f3a805;
+            padding: 5px;
+            color: #f0a00c;
+            border-radius: 10px;
+            width: 610px;
+            height: 34px;
+            background: inherit;
+        }
+    }
+    @media (max-width: 500px){
+        &_wrapper{
+            width: 90%;
+        }
+        &_wrapper_form{
+            &_input{
+                width: 100%;
+            }
+            &_btn{
+                width: 100%;
+            }
+            &_btn_2{
+                width: 100%;
+            }
+            &_btn_3{
+                width: 100%;
+            }
+        }
+    }
+}
